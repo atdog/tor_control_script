@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require './control.rb'
+require_relative 'Tor'
 
 tor = Tor.new("127.0.0.1", 9051)
 tor.authenticate
