@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require "socket"
-require "colorize"
 
 class Tor
     attr_accessor :s
@@ -71,7 +70,6 @@ class Tor
     end
 
     def send(str)
-#          puts str.green
         @s.puts str
     end
 
@@ -80,7 +78,6 @@ class Tor
         loop do
             str = @s.gets
             result << str
-#              puts str.chomp.yellow
             if str.chomp == "250 OK"
                 break
             end

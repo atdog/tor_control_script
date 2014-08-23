@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require "colorize"
 require './control.rb'
 
 tor = Tor.new("127.0.0.1", 9051)
