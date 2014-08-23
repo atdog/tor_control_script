@@ -6,7 +6,7 @@ class Tor
     attr_accessor :s
 
     def initialize(ip, port)
-        @s = connect(ip, port) 
+        @s = connect(ip, port)
     end
 
     def connect(ip, port)
